@@ -3,10 +3,9 @@ import { initializeApollo, addApolloState } from "../lib/apolloClient";
 import PostList, {
   ALL_POSTS_QUERY,
   allPostsQueryVars,
-} from "../components/PostList";
+} from "../components/Postlist";
 import { Footer } from "../components/Footer/Footer";
 import { Hero } from "../components/Hero/Hero";
-import styles from "../styles/index.module.scss";
 
 const IndexPage = () => (
   <>
