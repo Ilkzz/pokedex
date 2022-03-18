@@ -75,6 +75,7 @@ export default function PostList() {
           <div className="col-sm-12 col-lg-4">
             {console.log(post)}
             <PokemonCard
+              key={index}
               name={post.name}
               types={post.pokemon_v2_pokemons[0].pokemon_v2_pokemontypes}
               abilities={

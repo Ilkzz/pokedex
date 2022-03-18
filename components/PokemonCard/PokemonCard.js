@@ -15,7 +15,7 @@ export const PokemonCard = ({name, types, src, abilities, stats}) => (
         <p className={styles.types}>
           {types.map((type, i) => {
             return (
-              <span>{type.pokemon_v2_type.name}</span>
+              <span key={i}>{type.pokemon_v2_type.name}</span>
             )
           })}
         </p>
@@ -26,7 +26,7 @@ export const PokemonCard = ({name, types, src, abilities, stats}) => (
         <p className={styles.abilities}>
           {abilities.map((ability, i) => {
             return (
-              <span>{ability.pokemon_v2_ability.name}</span>
+              <span key={i}>{ability.pokemon_v2_ability.name}</span>
             )
           })}
         </p>
@@ -36,7 +36,7 @@ export const PokemonCard = ({name, types, src, abilities, stats}) => (
           {stats.map((stat, i) => {
             {console.log(stat)}
             return (
-              <div className={styles.container}>
+              <div className={styles.container} key={i}>
                 <p className={styles.subtitle}>{stat.pokemon_v2_stat.name}</p>
                 <div className={styles.statbar}>
                   <div className={styles.statbarStat} style={{width: stat.base_stat + "%"}}></div>
