@@ -1,0 +1,35 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins";
+  // background: black;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  background: none;
+  appearance: none;
+  border-radius: 40px;
+  background-color: black;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  border: 0;
+  padding: 15px 35px;
+}
+// .row {
+//   background: blue;
+// }
+
+// .row:nth-child(2n+1) {
+//   background: red;
+// }
